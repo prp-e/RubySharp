@@ -1,3 +1,4 @@
+#RubySharp
 class Console 
 	def Write(param)
 		return param
