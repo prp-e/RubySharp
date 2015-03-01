@@ -1,12 +1,14 @@
 #RubySharp
+
+require 'io/console'
+
 class Console 
 	def Write(param)
-		return param
+		print param
 	end
 
 	def WriteLine(param)
-		paramLn = param + "\n"
-		return paramLn
+		puts param
 	end
 
 	def ReadLine()
@@ -17,6 +19,11 @@ class Console
 	def Read()
 		param = gets.chomp
 		return param
+	end
+
+	def ReadKey()
+		input = STDIN.getch
+		return input
 	end
 end
 
