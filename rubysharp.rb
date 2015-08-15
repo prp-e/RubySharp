@@ -3,25 +3,25 @@
 require 'io/console'
 
 class Console 
-	def Write(param)
+	def self.Write(param)
 		print param
 	end
 
-	def WriteLine(param)
+	def self.WriteLine(param)
 		puts param
 	end
 
-	def ReadLine()
+	def self.ReadLine()
 		param = gets
 		return param
 	end
 
-	def Read()
+	def self.Read()
 		param = gets.chomp
 		return param
 	end
 
-	def ReadKey()
+	def self.ReadKey()
 		input = STDIN.getch
 		return input
 	end
@@ -45,5 +45,4 @@ class Convert
 	end
 end
 
-Console = Console.new
 Convert = Convert.new
