@@ -28,21 +28,21 @@ class Console
 end
 
 class Convert
-	def ToInt(param)
+	def self.ToInt(param)
 		return param.to_i
 	end
 
-	def ToFloat(param)
+	def self.ToFloat(param)
 		return param.to_f
 	end
 
-	def ToString(param)
+	def self.ToString(param)
 		return param.to_s
 	end
 	
-	def ToArray(param)
+	def self.ToArray(param)
 		return param.to_a
 	end
 end
 
-Convert = Convert.new
+
